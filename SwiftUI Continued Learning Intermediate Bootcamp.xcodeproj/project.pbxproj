@@ -13,6 +13,7 @@
 		5DE3D6E929379EA400A06A80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DE3D6E829379EA400A06A80 /* Preview Assets.xcassets */; };
 		5DE3D6F129379F1100A06A80 /* LongPressGestureBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE3D6F029379F1100A06A80 /* LongPressGestureBootcamp.swift */; };
 		5DE3D6F42937AD8B00A06A80 /* MagnificationGestureBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE3D6F32937AD8B00A06A80 /* MagnificationGestureBootcamp.swift */; };
+		5DE3D6F72937B54C00A06A80 /* RotationGestureBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE3D6F62937B54C00A06A80 /* RotationGestureBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		5DE3D6E829379EA400A06A80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5DE3D6F029379F1100A06A80 /* LongPressGestureBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureBootcamp.swift; sourceTree = "<group>"; };
 		5DE3D6F32937AD8B00A06A80 /* MagnificationGestureBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationGestureBootcamp.swift; sourceTree = "<group>"; };
+		5DE3D6F62937B54C00A06A80 /* RotationGestureBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGestureBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		5DE3D6E029379EA300A06A80 /* SwiftUI Continued Learning Intermediate Bootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				5DE3D6F52937B53000A06A80 /* Class#3 */,
 				5DE3D6F22937AD1300A06A80 /* Class#2 */,
 				5DE3D6EF29379EF200A06A80 /* Class#1 */,
 				5DE3D6E129379EA300A06A80 /* SwiftUI_Continued_Learning_Intermediate_BootcampApp.swift */,
@@ -87,6 +90,14 @@
 				5DE3D6F32937AD8B00A06A80 /* MagnificationGestureBootcamp.swift */,
 			);
 			path = "Class#2";
+			sourceTree = "<group>";
+		};
+		5DE3D6F52937B53000A06A80 /* Class#3 */ = {
+			isa = PBXGroup;
+			children = (
+				5DE3D6F62937B54C00A06A80 /* RotationGestureBootcamp.swift */,
+			);
+			path = "Class#3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 				5DE3D6E229379EA300A06A80 /* SwiftUI_Continued_Learning_Intermediate_BootcampApp.swift in Sources */,
 				5DE3D6F42937AD8B00A06A80 /* MagnificationGestureBootcamp.swift in Sources */,
 				5DE3D6F129379F1100A06A80 /* LongPressGestureBootcamp.swift in Sources */,
+				5DE3D6F72937B54C00A06A80 /* RotationGestureBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
