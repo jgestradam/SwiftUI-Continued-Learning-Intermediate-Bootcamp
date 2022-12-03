@@ -34,8 +34,7 @@ class ArrayModificationViewModel: ObservableObject {
 //        })
         // best short solution
         filteredArray = dataArray.sorted { $0.points > $1.points }
-         */
-        
+         */  
         // filter
         /*
 //        filteredArray = dataArray.filter({ user in
