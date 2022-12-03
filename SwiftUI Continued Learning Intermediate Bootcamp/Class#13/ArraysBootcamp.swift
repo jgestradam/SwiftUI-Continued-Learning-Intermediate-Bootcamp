@@ -9,7 +9,7 @@ import SwiftUI
 
 struct UserModel: Identifiable {
     let id = UUID().uuidString
-    let name: String
+    let name: String?
     let points: Int
     let isVerified: Bool
 }
@@ -18,6 +18,7 @@ class ArrayModificationViewModel: ObservableObject {
     
     @Published var dataArray: [UserModel] = []
     @Published var filteredArray: [UserModel] = []
+    @Published var mappedArray: [String] = []
     
     init () {
         getUsers()
@@ -25,27 +26,58 @@ class ArrayModificationViewModel: ObservableObject {
     }
     
     func updateFilteredArray() {
+
         // sort
-        // filter
-        // map
-        
+        /*
 //        filteredArray = dataArray.sorted(by: { user1, user2 in
 //            return user1.points > user2.points
 //        })
         // best short solution
-        
         filteredArray = dataArray.sorted { $0.points > $1.points }
+         */
+        
+        // filter
+        /*
+//        filteredArray = dataArray.filter({ user in
+//            //return user.points > 50
+//            return user.name.contains("i")
+//        })
+        
+        filteredArray = dataArray.filter({ $0.isVerified })
+         */
+        
+        // map
+        /*
+        // Basically we when we are doing a map we can transform our data from one type to another type
+        
+//        mappedArray = dataArray.map({ user -> String in
+//            return user.name ?? "Error"
+//        })
+        
+        //mappedArray = dataArray.map({ $0.name })
+        
+//        mappedArray = dataArray.compactMap({ user -> String? in
+//            return user.name
+//        })
+        
+        mappedArray = dataArray.compactMap({ $0.name })
+         */
+        
+        mappedArray = dataArray
+                        .sorted(by: { $0.points > $1.points})
+                        .filter({ $0.isVerified })
+                        .compactMap({ $0.name })
     }
     
     func getUsers() {
         let user1 = UserModel(name: "Joseph", points: 5, isVerified: true)
         let user2 = UserModel(name: "Christ", points: 0, isVerified: false)
-        let user3 = UserModel(name: "Joe", points: 20 , isVerified: true)
+        let user3 = UserModel(name: nil, points: 20 , isVerified: true)
         let user4 = UserModel(name: "Emily", points: 50, isVerified: false)
         let user5 = UserModel(name: "Samantha ", points: 45, isVerified: true)
         let user6 = UserModel(name: "Jason", points: 23, isVerified: false)
         let user7 = UserModel(name: "Sarah", points: 76 , isVerified: true)
-        let user8 = UserModel(name: "Lisa", points: 45, isVerified: false)
+        let user8 = UserModel(name: nil, points: 45, isVerified: false)
         let user9 = UserModel(name: "Steve", points: 1 , isVerified: true)
         let user10 = UserModel(name: "Amanda", points: 100, isVerified: false)
         
@@ -71,23 +103,27 @@ struct ArraysBootcamp: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 10) {
-                ForEach(vm.filteredArray) { user in
-                    VStack(alignment: .leading) {
-                        Text(user.name)
-                            .font(.headline)
-                        HStack {
-                            Text("Poins: \(user.points)")
-                            Spacer()
-                            if user.isVerified {
-                                Image(systemName: "flame.fill")
-                            }
-                        }
-                    }
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue.cornerRadius(10))
-                    .padding(.horizontal)
+                ForEach(vm.mappedArray, id: \.self) { name in
+                    Text(name)
+                        .font(.title)
                 }
+//                ForEach(vm.filteredArray) { user in
+//                    VStack(alignment: .leading) {
+//                        Text(user.name)
+//                            .font(.headline)
+//                        HStack {
+//                            Text("Poins: \(user.points)")
+//                            Spacer()
+//                            if user.isVerified {
+//                                Image(systemName: "flame.fill")
+//                            }
+//                        }
+//                    }
+//                    .foregroundColor(.white)
+//                    .padding()
+//                    .background(Color.blue.cornerRadius(10))
+//                    .padding(.horizontal)
+//                }
             }
         }
     }
