@@ -32,6 +32,7 @@ class ArrayModificationViewModel: ObservableObject {
 //        filteredArray = dataArray.sorted(by: { user1, user2 in
 //            return user1.points > user2.points
 //        })
+        // best short solution
         
         filteredArray = dataArray.sorted { $0.points > $1.points }
     }
