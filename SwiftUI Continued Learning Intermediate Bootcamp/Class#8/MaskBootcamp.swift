@@ -39,7 +39,7 @@ extension MaskBootcamp {
     private var startView: some View {
         HStack {
             ForEach(1..<6) { index in
-                Image(systemName: "star.fill")
+                Image(systemName: "heart.fill")
                     .font(.largeTitle)
                     .foregroundColor(Color.gray)
                     .onTapGesture {
