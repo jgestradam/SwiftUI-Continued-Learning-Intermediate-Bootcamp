@@ -15,6 +15,7 @@
 		5D2CF5B1293E728E00158FAE /* DownloadWithEscapingBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CF5B0293E728E00158FAE /* DownloadWithEscapingBootcamp.swift */; };
 		5D2CF5B4293E852600158FAE /* DownloadWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CF5B3293E852600158FAE /* DownloadWithCombine.swift */; };
 		5D2CF5B7293E97CB00158FAE /* TimerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CF5B6293E97CB00158FAE /* TimerBootcamp.swift */; };
+		5D2CF60B293F9A5F00158FAE /* SubscriberBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CF60A293F9A5F00158FAE /* SubscriberBootcamp.swift */; };
 		5D42F52429393E7A00D9DB28 /* SoundsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42F52329393E7A00D9DB28 /* SoundsBootcamp.swift */; };
 		5D42F5282939470D00D9DB28 /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D42F5262939470D00D9DB28 /* tada.mp3 */; };
 		5D42F5292939470D00D9DB28 /* badum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D42F5272939470D00D9DB28 /* badum.mp3 */; };
@@ -49,6 +50,7 @@
 		5D2CF5B0293E728E00158FAE /* DownloadWithEscapingBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithEscapingBootcamp.swift; sourceTree = "<group>"; };
 		5D2CF5B3293E852600158FAE /* DownloadWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithCombine.swift; sourceTree = "<group>"; };
 		5D2CF5B6293E97CB00158FAE /* TimerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerBootcamp.swift; sourceTree = "<group>"; };
+		5D2CF60A293F9A5F00158FAE /* SubscriberBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberBootcamp.swift; sourceTree = "<group>"; };
 		5D42F52329393E7A00D9DB28 /* SoundsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsBootcamp.swift; sourceTree = "<group>"; };
 		5D42F5262939470D00D9DB28 /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
 		5D42F5272939470D00D9DB28 /* badum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = badum.mp3; sourceTree = "<group>"; };
@@ -148,6 +150,14 @@
 				5D2CF5B6293E97CB00158FAE /* TimerBootcamp.swift */,
 			);
 			path = "Class#24";
+			sourceTree = "<group>";
+		};
+		5D2CF5B8293EADBA00158FAE /* Class#25 */ = {
+			isa = PBXGroup;
+			children = (
+				5D2CF60A293F9A5F00158FAE /* SubscriberBootcamp.swift */,
+			);
+			path = "Class#25";
 			sourceTree = "<group>";
 		};
 		5D42F52229393E5F00D9DB28 /* Class#9 */ = {
@@ -268,6 +278,7 @@
 		5DE3D6E029379EA300A06A80 /* SwiftUI Continued Learning Intermediate Bootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				5D2CF5B8293EADBA00158FAE /* Class#25 */,
 				5D2CF5B5293E972000158FAE /* Class#24 */,
 				5D2CF5B2293E842B00158FAE /* Class#23 */,
 				5D2CF5AF293E720800158FAE /* Class#22 */,
@@ -428,6 +439,7 @@
 				5D470E442937EC7D00FE8005 /* ScrollViewReaderBootcamp.swift in Sources */,
 				5DE3D6E229379EA300A06A80 /* SwiftUI_Continued_Learning_Intermediate_BootcampApp.swift in Sources */,
 				5D2CF5A4293E2B7000158FAE /* WeakSelfBootcamp.swift in Sources */,
+				5D2CF60B293F9A5F00158FAE /* SubscriberBootcamp.swift in Sources */,
 				5DE3D6F42937AD8B00A06A80 /* MagnificationGestureBootcamp.swift in Sources */,
 				5D42F52429393E7A00D9DB28 /* SoundsBootcamp.swift in Sources */,
 				5D2CF5A1293D9EF300158FAE /* BackgroundThreadBootcamp.swift in Sources */,
