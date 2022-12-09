@@ -104,7 +104,7 @@ struct SubscriberBootcamp: View {
             Button {
                 
             } label: {
-                Text("Submit".uppercased())
+                Text("Submit !!".uppercased())
                     .font(.headline)
                     .foregroundColor(.white)
                     .frame(height: 55)
@@ -116,8 +116,6 @@ struct SubscriberBootcamp: View {
                     )
             }
             .disabled(!vm.showButton)
-
-            
         }
         .padding()
     }
